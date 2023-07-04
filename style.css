@@ -4,7 +4,7 @@
 
 .header {
     display: flex;
-    background-color: bisque;
+    background-color: rgb(251, 230, 204);
 }
 
 img {
@@ -21,11 +21,11 @@ h1 {
     flex: 10;
 }
 
-#search-bar {
+.search-bar {
     text-align: center;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-bottom: 20px;
-    background-color: bisque;
+    background-color: rgb(251, 230, 204);
 }
 
 button {
@@ -39,6 +39,10 @@ button img {
     height: 25px;
 }
 
+ul {
+    padding-left: 0px;
+}
+
 input {
     border-radius: 20px;
     text-align: center;
@@ -46,4 +50,9 @@ input {
     padding-bottom: 10px;
     font-size: medium;
     width: 300px;
+}
+
+.app-info {
+    margin-top: 20px;
+    font-size: large;
 }
