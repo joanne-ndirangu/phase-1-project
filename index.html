@@ -9,13 +9,19 @@
 <body>
 <form action="/search" method="GET">
   <div class="header">
-  <img src="./img/logo2.jpg" alt="">
+  <img src="./img/logo2.jpg" alt="logo">
     <h1>EAT</h1>
+    <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   </div>
     <div class="search-bar">
     <input type="text" name="search-query" placeholder="Enter ingredient ...">
     <button type="submit">
-      <img src="./img/800px-Search_Icon.svg.png" alt="microscope">
+      <img src="./img/microscope.png" alt="microscope">
     </button>
     <ul>
       <li>Calories</li>
@@ -25,8 +31,11 @@
     </div>
   </form>
   <div class="app-info">
-    <h2>About</h2>
+    <h2 id="about">About</h2>
     <p>Eat is a recipe search app that helps you get the best recipes with the ingredients available to you.</p>
+  </div>
+  <div id="contact">
+    <p>Contact Me</p>
   </div>
 </body>
 </html>
