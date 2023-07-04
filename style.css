@@ -4,7 +4,7 @@
 
 .header {
     display: flex;
-    background-color: rgb(241, 230, 215);
+    background-color: rgb(219, 159, 219);
 }
 
 img {
@@ -28,22 +28,27 @@ nav {
     flex-wrap: wrap;
     flex: 5;
     padding-left: 65%;
+    color: black;
 }
 
 nav ul li {
     display: inline-block;
     list-style-type: none;
     margin: 10px 30px;
-    font-size: 25px;
-    color: red;
+    font-size: 23px;
 }
 
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
 
 .search-bar {
     text-align: center;
     padding-top: 4%;
     padding-bottom: 30px;
-    background-color: rgb(241, 230, 215);
+    background-color: rgb(219, 159, 219);
+    /* background-color: rgb(241, 230, 215); */
 }
 
 button {
@@ -57,7 +62,7 @@ button img {
     height: 25px;
 }
 
-ul {
+#list {
     padding-left: 0px;
     padding-top: 10px;
 }
