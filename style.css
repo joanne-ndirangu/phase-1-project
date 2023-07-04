@@ -1,0 +1,49 @@
+* {
+    margin: 0%;
+}
+
+.header {
+    display: flex;
+    background-color: bisque;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    flex: 0.5;
+    border-radius: 50%;
+    border-color: transparent;
+}
+
+h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    flex: 10;
+}
+
+#search-bar {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    background-color: bisque;
+}
+
+button {
+    border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button img {
+    width: 30px;
+    height: 25px;
+}
+
+input {
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: medium;
+    width: 300px;
+}
