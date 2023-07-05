@@ -4,7 +4,7 @@
 
 .header {
     display: flex;
-    background-color: rgb(219, 159, 219);
+    background-color: rgb(219, 159, 207);
 }
 
 img {
@@ -34,7 +34,7 @@ nav {
 nav ul li {
     display: inline-block;
     list-style-type: none;
-    margin: 10px 30px;
+    margin: 5px 20px;
     font-size: 23px;
 }
 
@@ -47,7 +47,7 @@ nav ul li a {
     text-align: center;
     padding-top: 4%;
     padding-bottom: 30px;
-    background-color: rgb(219, 159, 219);
+    background-color: rgb(219, 159, 207);
 }
 
 button {
@@ -98,6 +98,7 @@ h2 {
     height: 230px;
     padding-right: 20px;
     padding-left: 30px;
+    /* background-color: rgb(219, 159, 207); */
 }
 
 .cat {
