@@ -62,11 +62,6 @@ button img {
     height: 25px;
 }
 
-#list {
-    padding-left: 0px;
-    padding-top: 10px;
-}
-
 input {
     border-radius: 20px;
     text-align: center;
@@ -84,4 +79,38 @@ input {
     height: 100vh;
     background-position: center;
     background-size: cover;
+}
+
+/* #categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    justify-content: flex-start;
+}
+
+#img {
+    display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    width: 1000px;
+    height: 200px;
+} */
+
+#categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+.pic {
+    width: 350px;
+    height: 200px;
+    padding-right: 20px;
+}
+
+#cat {
+    text-align: center;
+    padding-bottom: 20px;
 }
