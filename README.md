@@ -8,6 +8,8 @@
 2. A working web browser
 3. Stable internet connection
 
+### Installation Process
+
 ## Author
 Joanne Ndirangu.
 
