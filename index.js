@@ -12,13 +12,14 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
                     let categoryElement = document.createElement('div');
                     categoryElement.innerHTML = `
                         <img class="pic" src="${category.strCategoryThumb}" alt="${category.strCategory}">
-                        <p id="cat">${category.strCategory}</p>
+                        <p class="cat">${category.strCategory}</p>
                     `;
                     categoriesElement.appendChild(categoryElement);
 
                     categoryElement.addEventListener('click', () => categoryData(category));
                 });
             }
+
 
             function categoryData(category) {
                 fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
@@ -30,8 +31,8 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
                         data.meals.forEach(meal => {
                             let mealItem = document.createElement('div');
                             mealItem.innerHTML = `
-                                <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
-                                <p>${meal.strMeal}</p>
+                                <img id="meal-img" src="${meal.strMealThumb}" alt="${meal.strMeal}">
+                                <p id="meal-name">${meal.strMeal}</p>
                             `;
                             mealElement.appendChild(mealItem);
                         });

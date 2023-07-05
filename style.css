@@ -48,7 +48,6 @@ nav ul li a {
     padding-top: 4%;
     padding-bottom: 30px;
     background-color: rgb(219, 159, 219);
-    /* background-color: rgb(241, 230, 215); */
 }
 
 button {
@@ -72,7 +71,6 @@ input {
 }
 
 .app-info {
-    /* margin-top: 20px; */
     font-size: large;
     background-image: url();
     width: 100%;
@@ -81,10 +79,11 @@ input {
     background-size: cover;
 }
 
-#about {
+h2 {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 35px;
 }
 
 #categories {
@@ -96,11 +95,31 @@ input {
 
 .pic {
     width: 350px;
-    height: 200px;
+    height: 230px;
     padding-right: 20px;
+    padding-left: 30px;
 }
 
-#cat {
+.cat {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#category-meals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#meal-img {
+    width: 250px;
+    height: 200px;
+    padding-right: 20px;
+    padding-left: 30px;
+}
+
+#meal-name {
     text-align: center;
     padding-bottom: 20px;
 }
