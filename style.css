@@ -81,21 +81,11 @@ input {
     background-size: cover;
 }
 
-/* #categories {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
-    justify-content: flex-start;
+#about {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-#img {
-    display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-    width: 1000px;
-    height: 200px;
-} */
 
 #categories {
     display: flex;

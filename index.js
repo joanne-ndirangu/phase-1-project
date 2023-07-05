@@ -5,15 +5,35 @@ fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
             .then(data => displayCategories(data.categories))
             .catch(error => console.log(error));
 
-        function displayCategories(categories) {
-            let categoriesElement = document.getElementById('categories');
+            function displayCategories(categories) {
+                let categoriesElement = document.getElementById('categories');
 
-            categories.forEach(category => {
-                let categoryElement = document.createElement('div');
-                categoryElement.innerHTML = `
-                    <img class="pic" src="${category.strCategoryThumb}" alt="${category.strCategory}">
-                    <p id="cat">${category.strCategory}</p>
-                `;
-                categoriesElement.appendChild(categoryElement);
-            });
-        }
+                categories.forEach(category => {
+                    let categoryElement = document.createElement('div');
+                    categoryElement.innerHTML = `
+                        <img class="pic" src="${category.strCategoryThumb}" alt="${category.strCategory}">
+                        <p id="cat">${category.strCategory}</p>
+                    `;
+                    categoriesElement.appendChild(categoryElement);
+
+                    categoryElement.addEventListener('click', () => categoryData(category));
+                });
+            }
+
+            function categoryData(category) {
+                fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
+                    .then(res => res.json())
+                    .then(data => {
+                        let mealElement = document.getElementById('category-meals');
+                        mealElement.innerHTML = '';
+
+                        data.meals.forEach(meal => {
+                            let mealItem = document.createElement('div');
+                            mealItem.innerHTML = `
+                                <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
+                                <p>${meal.strMeal}</p>
+                            `;
+                            mealElement.appendChild(mealItem);
+                        });
+                    });
+            }
